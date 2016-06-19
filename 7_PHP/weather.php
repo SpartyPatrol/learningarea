@@ -47,7 +47,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 center">
             
-            <h1 class="white center">Weather Prediction</h1>
+            <h1 class="white center">Weather Prediction 2</h1>
                 <p class="lead white center">Enter your city below. </p>
                 <form>
                     <div class="form-group">
