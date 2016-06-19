@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>OEC Study App</title>
+
+    <!-- DEFINE ALL THE STYLES IN HERE  -->
+    <style>
+
+      .mainContainer {
+          padding-top: 50px;
+          padding-bottom: 20px;
+        }
+
+    .contentContainer {
+      text-align:center;
+    }
+
+      #homeDiv {
+        background-image:url("img/chairlift-big_bg.jpg");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size:cover;
+        height:800px;
+        width:100%;
+      }
+      
+      .center {text-align:center;}
+      
+      #homeContent {
+        text-align:center;
+      }
+      
+      #aboutDiv {
+        background-color:gray;
+        height:800px;
+        width:100%;
+      }
+      
+      #downloadDiv {
+        background-color:#d3d3d3;
+        height:800px;
+      }
+
+    </style>
+    
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse" class="mainContainer">
+
+    <!-- NAV BAR HERE -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">OEC Study</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#homeDiv">Home</a></li>
+            <li><a href="#aboutDiv">About</a></li>
+            <li><a href="#downloadDiv">Download the App</a></li>
+          </ul>  
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          
+          
+        </div>
+      </div>
+    </nav> <!--navbar -->
+
+    
+    <div id="homeDiv"     class="container contentContainer mainContainer">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="center">
+          <h2>Quiz Yourself on OEC material</h2> 
+          <h3>Currrently, this page is under heavy development. Please submit your email if you're interested in learning more or helping out.</h3>
+          <form>
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="email" class="form-control" name="email" placeholder="Your Email"/>
+            </div>
+            <input type="submit" class="btn btn-success btn-lg marginTop" />
+
+          </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="aboutDiv"    class="container contentContainer mainContainer"> 
+      <div class="row">
+        <div class="col-md-4 ">
+          <p>Div 1 About Is here</p>
+        </div>
+        <div class="col-md-4">
+          Div 2 About Is here
+        </div>
+        <div class="col-md-4">
+          Div 3 About Is here
+        </div>
+
+
+
+      </div>
+    </div>
+    <div id="downloadDiv" class="container contentContainer mainContainer"> 
+        <h3>Yeah, about that. No app yet. Probably going to be a while. In the meantime, I could use some help generating the question bank from the book. Send me a request!</h3>
+    </div>
+    
+    <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+    
+    <!-- Include jQuery and bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+    /*global $*/
+<!--    <script>$(".contentContainer").css("min-height",$(window).height());</script>  -->
+    
+  </body>
+</html>

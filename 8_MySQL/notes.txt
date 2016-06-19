@@ -1,0 +1,25 @@
+# start MySQL. Will create an empty database on first start
+$ mysql-ctl start
+
+# stop MySQL
+$ mysql-ctl stop
+
+# run the MySQL interactive shell
+$ mysql-ctl cli
+
+select @@hostname;
+CREATE USER 'patroller'@'%' IDENTIFIED BY 'patroller';
+GRANT ALL PRIVILEGES ON *.* TO 'patroller'@'%' WITH GRANT OPTION;
+
+/// SETTING UP phpmyadmin
+///         https://community.c9.io/t/setting-up-phpmyadmin/1723
+mysql-ctl install
+phpmyadmin-ctl install
+mysql-ctl start
+
+After installing phpMyAdmin, you were given a link to access PHPMyAdmin which will follow the pattern of: https://[workspacename]-[username].c9users.io/phpmyadmin. From that link, you can login with your Cloud9 username and a blank password.
+
+
+PHPMyAdmin Installation complete. You can log in at: https://learningarea-spartan-patroller.c9users.io/phpmyadmin with the following username (and blank password):
+
+       Username: spartan_patrolle
